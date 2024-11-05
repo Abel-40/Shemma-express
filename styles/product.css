@@ -1,0 +1,65 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display three columns */
+  gap: 10px; /* Add a gap between cards */
+  column-gap: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+.card_price {
+  font-size: 1.2rem;
+}
+
+.card_image {
+  height: 150px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Ensure the image does not overflow its container */
+}
+
+.card_image img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Ensure the entire image is visible */
+}
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 400px); /* Display three columns */
+    justify-content: center;
+  }
+
+  .card {
+    width: 300px; 
+    height: 400px;/* Set a larger width for the cards */
+  }
+  .card-con{
+    width:100%;
+  }
+}
+
